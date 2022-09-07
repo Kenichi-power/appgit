@@ -9,3 +9,8 @@ function arrayDiff(a, b) {
     }
     return a;
 }
+//or
+function arrayDiff(a, b) {
+    return a.filter(e => !b.includes(e))
+    // return a.filter(function(e){return !b.includes(e)})
+}
